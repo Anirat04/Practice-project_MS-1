@@ -1,0 +1,210 @@
+/*============================= common css starts ========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pcl: #147ff3;
+    --bgcl: #E3F4FF;
+    --dark-01: #181818;
+    --dark-02: #474747;
+    --dark-03: #757575;
+    --white-color: #FFFFFF;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text_color {
+    color: var(--pcl);
+}
+
+/* paragraph common css starts */
+.common_p {
+    color: var(--dark-03);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* paragraph common css ends */
+
+.btn,
+.btn a {
+    border-radius: 5px;
+    background: var(--pcl);
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* =========================  common css ends =========================== */
+
+
+/* nav css starts */
+header nav {
+    padding-top: 51px;
+}
+
+header nav,
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h3 {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    color: var(--dark-02);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* nav css ends */
+
+/* banner css starts */
+.banner {
+    background-color: var(--bgcl);
+}
+
+.banner .banner_content {
+    padding-top: 60px;
+    display: flex;
+    position: relative;
+    z-index: 99999;
+}
+
+.banner .banner_content .bgimg {
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    z-index: -1;
+}
+
+.banner .banner_content .bgimgV {
+    position: absolute;
+    top: -60px;
+    left: -120px;
+}
+
+.banner .banner_content .banner_item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 60px;
+
+}
+
+.banner .banner_content .banner_item h3 {
+    color: var(--dark-02, #474747);
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.banner .banner_content .banner_item h1 {
+    color: var(--dark-01, #181818);
+    font-family: Open Sans;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.banner .banner_content .banner_item .banner_btn .d_btn {
+    border: 1px solid var(--pcl);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn a {
+    color: var(--pcl);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 10px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn .bbtn {
+    padding: 15px 23px;
+    display: flex;
+    align-items: center;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn:hover .bbtn {
+    background-color: var(--pcl);
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn:hover a,
+.change_col {
+    color: #FFFFFF;
+    fill: white;
+}
+
+.banner .banner_content .banner_item .banner_btn .bbtk {
+    display: flex;
+    align-items: center;
+    float: left;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+
+/* banner css ends */
