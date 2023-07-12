@@ -27,6 +27,10 @@ img {
     vertical-align: middle;
 }
 
+.full-wrapper {
+    width: 100%;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -39,6 +43,21 @@ body {
 .text_color {
     color: var(--pcl);
 }
+
+/* header text css starts */
+.h-text {
+    text-align: center;
+}
+
+.h-text h2 {
+    color: var(--dark-01, #181818);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* header text css ends */
 
 /* paragraph common css starts */
 .common_p {
@@ -67,6 +86,8 @@ body {
 
 /* =========================  common css ends =========================== */
 
+
+/* ========================= Header section css starts ============================ */
 
 /* nav css starts */
 header nav {
@@ -155,17 +176,42 @@ header nav ul li a {
 
 
 .banner .banner_content .banner_item .banner_btn .d_btn {
-    border: 1px solid var(--pcl);
-    background-color: #FFFFFF;
+    background-color: var(--pcl);
+    border: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
 }
 
-.banner .banner_content .banner_item .banner_btn .d_btn a {
+.banner .banner_content .banner_item .banner_btn .d_btn:hover {
+    background-color: white;
+    border: 1px solid var(--pcl);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn:hover .bbtn a {
     color: var(--pcl);
+
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn:hover .bbtn i {
+    color: #147ff3;
+}
+
+.banner .banner_content .banner_item .banner_btn .d_btn a,
+i {
+    color: var(--white-color);
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -182,29 +228,37 @@ header nav ul li a {
     padding: 15px 23px;
     display: flex;
     align-items: center;
-    transition: all linear 0.3s;
-    -webkit-transition: all linear 0.3s;
-    -moz-transition: all linear 0.3s;
-    -ms-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-}
-
-.banner .banner_content .banner_item .banner_btn .d_btn:hover .bbtn {
-    background-color: var(--pcl);
-}
-
-.banner .banner_content .banner_item .banner_btn .d_btn:hover a,
-.change_col {
-    color: #FFFFFF;
-    fill: white;
-}
-
-.banner .banner_content .banner_item .banner_btn .bbtk {
-    display: flex;
-    align-items: center;
-    float: left;
-    text-transform: capitalize;
-    margin-right: 30px;
 }
 
 /* banner css ends */
+
+
+/* ========================= Header section css ends ============================ */
+
+/* =========================== Main section css starts =============================== */
+
+/* about section css starts */
+#about .about-bg {
+    margin: 130px 0;
+}
+
+#about .about-bg .about {
+    background-color: var(--bgcl);
+    /* padding: 157px; */
+    /* margin: 130px 0px; */
+}
+
+#about .about-bg .about .about-info{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#about .about-bg .about .about-info .dd1 {
+    /* text-transform: capitalize; */
+    text-align: center;
+}
+/* about section css ends */
+
+
+/* =========================== Main section css ends =============================== */
