@@ -230,6 +230,7 @@ i {
     align-items: center;
 }
 
+
 /* banner css ends */
 
 
@@ -248,7 +249,7 @@ i {
     /* margin: 130px 0px; */
 }
 
-#about .about-bg .about .about-info{
+#about .about-bg .about .about-info {
     display: flex;
     justify-content: space-around;
 
@@ -258,7 +259,113 @@ i {
     /* text-transform: capitalize; */
     text-align: center;
 }
+
 /* about section css ends */
 
+/* skills section starts */
+
+/* #skills .skills-bg .skills .skills-content .skills-info {
+    display: flex;
+    gap: 24px;
+    word-wrap: break-word;
+}
+
+#skills .skills-bg .skills .skills-content .skills-info .sd1 {
+    background-color: var(--bgcl);
+    height: 377px;
+    width: 267px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+
+#skills .skills-bg .skills .skills-content .skills-info .sd1 h3 {
+    color: var(--dark-01, #181818);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+} */
+
+/* skills section ends */
+
+#skills .skills-bg .skills .skills-content .h-text{
+    padding: 0px 115px;
+}
+
+
+#skills .skills-bg .skills .skills-content .skills-info {
+    /* display: flex;
+    gap: 24px; */
+    display: grid;
+    grid-template-columns: repeat(4, 267px);
+    justify-content: space-between;
+}
+
+#skills .skills-bg .skills .skills-content .skills-info .sd1 {
+    background-color: aquamarine;
+    height: 377px;
+    /* width: 267px; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+#skills .skills-bg .skills .skills-content .skills-info .sd1 h3 {
+    color: var(--dark-01, #181818);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:450px) {
+    /* body{
+        background-color: red;
+    } */
+    #skills .skills-bg .skills .skills-content{
+        width: 450px ;
+    }
+
+    #skills .skills-bg .skills .skills-content .h-text{
+        padding: 0px 30px;
+    }
+
+    #skills .skills-bg .skills .skills-content .skills-info{
+        width: 450px ;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        /* margin: 10px; */
+        /* margin: 20px 0px; */
+        gap: 30px;
+    }
+}
+
+
+@media screen and (min-width: 451px) and (max-width:576px)  {
+    #skills .skills-bg .skills .skills-content{
+        width: 576px ;
+    }
+
+    #skills .skills-bg .skills .skills-content .h-text{
+        padding: 0px 30px;
+    }
+
+    #skills .skills-bg .skills .skills-content .skills-info{
+        width: 576px ;
+        grid-template-columns: repeat(2, 267px);
+        justify-content: space-evenly;
+        row-gap: 10px;
+    }
+}
 
 /* =========================== Main section css ends =============================== */
