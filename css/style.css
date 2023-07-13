@@ -245,8 +245,10 @@ i {
 
 #about .about-bg .about {
     background-color: var(--bgcl);
-    /* padding: 157px; */
-    /* margin: 130px 0px; */
+}
+
+#about .about-bg .about .about-content {
+    padding: 130px;
 }
 
 #about .about-bg .about .about-info {
@@ -256,44 +258,14 @@ i {
 }
 
 #about .about-bg .about .about-info .dd1 {
-    /* text-transform: capitalize; */
     text-align: center;
 }
 
 /* about section css ends */
 
+
+
 /* skills section starts */
-
-/* #skills .skills-bg .skills .skills-content .skills-info {
-    display: flex;
-    gap: 24px;
-    word-wrap: break-word;
-}
-
-#skills .skills-bg .skills .skills-content .skills-info .sd1 {
-    background-color: var(--bgcl);
-    height: 377px;
-    width: 267px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-
-
-
-#skills .skills-bg .skills .skills-content .skills-info .sd1 h3 {
-    color: var(--dark-01, #181818);
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 20px;
-} */
-
-/* skills section ends */
-
 #skills .skills-bg .skills .skills-content .h-text{
     padding: 0px 115px;
 }
@@ -308,7 +280,7 @@ i {
 }
 
 #skills .skills-bg .skills .skills-content .skills-info .sd1 {
-    background-color: aquamarine;
+    background-color: var(--white-color);
     height: 377px;
     /* width: 267px; */
     border-radius: 5px;
@@ -326,46 +298,99 @@ i {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+/* skills section ends */
 
 
-@media screen and (max-width:450px) {
-    /* body{
-        background-color: red;
-    } */
-    #skills .skills-bg .skills .skills-content{
-        width: 450px ;
+
+/* Responsive for Mobile devices smaller starts */
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container{
+        width: 100%;
     }
 
+    /* about section responsive starts */
+    #about .about-bg .about .about-content{
+        padding: 80px 40px;
+    }
+    #about .about-bg .about .about-info{
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* about section responsive ends */
+    
     #skills .skills-bg .skills .skills-content .h-text{
         padding: 0px 30px;
     }
-
+    
     #skills .skills-bg .skills .skills-content .skills-info{
-        width: 450px ;
         grid-template-columns: repeat(1, 300px);
         justify-content: center;
-        /* margin: 10px; */
-        /* margin: 20px 0px; */
         gap: 30px;
     }
 }
+/* Responsive for Mobile devices smaller ends */
 
 
-@media screen and (min-width: 451px) and (max-width:576px)  {
-    #skills .skills-bg .skills .skills-content{
-        width: 576px ;
+
+/* Responsive for Mobile devices medium-smaller starts */
+@media screen and (min-width: 481px) and (max-width:576px) {
+    .container{
+        width: 100%;
     }
-
+    /* about section responsive starts */
+    #about .about-bg .about .about-content{
+        padding: 80px 40px;
+    }
+    #about .about-bg .about .about-info{
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* about section responsive ends */
+    
+    /* skill section responsive starts */
     #skills .skills-bg .skills .skills-content .h-text{
         padding: 0px 30px;
     }
-
+    
     #skills .skills-bg .skills .skills-content .skills-info{
-        width: 576px ;
-        grid-template-columns: repeat(2, 267px);
-        justify-content: space-evenly;
-        row-gap: 10px;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        gap: 30px;
     }
+    /* skill section responsive ends */
+}
+/* Responsive for Mobile devices medium-smaller ends */
+
+
+@media screen and (min-width: 577px) and (max-width:768px)  {
+
+    .container{
+        width: 100%;
+    }
+
+
+    /* about section responsive starts */
+    #about .about-bg .about .about-content{
+        padding: 80px;
+    }
+    #about .about-bg .about .about-info{
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* about section responsive ends */
+
+
+    /* skill section responsive starts */
+    #skills .skills-bg .skills .skills-content .h-text{
+        padding: 0px 30px;
+    }
+    
+    #skills .skills-bg .skills .skills-content .skills-info{
+        grid-template-columns: repeat(2, 267px);
+        justify-content: center;
+        gap: 20px;
+    }
+    /* skill section responsive ends */
 }
 
 /* =========================== Main section css ends =============================== */
