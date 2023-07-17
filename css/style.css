@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -145,7 +146,6 @@ header nav ul li a {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* right: -300px; */
     z-index: -1;
 }
 
@@ -353,7 +353,7 @@ i {
     margin-right: 90px;
 }
 
-#resume .resume-bg .resume .resume-btn{
+#resume .resume-bg .resume .resume-btn {
     margin-top: 60px;
     display: flex;
     justify-content: center;
@@ -379,7 +379,95 @@ i {
 /* =========================== Main section css ends =============================== */
 
 
+/* =========================== Footer section css starts =============================== */
+#footer .footer-bg {
+    background-color: var(--bgcl);
+    padding: 130px 0px;
+    margin-top: 130px;
+}
 
+#footer .footer-bg .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#footer .footer-bg .footer .footer-content {
+    padding-right: 80px;
+}
+
+#footer .footer-bg .footer .footer-content h3 {
+    color: var(--dark-01, #181818);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#footer .footer-bg .footer .footer-content .footer-icon a i {
+    color: var(--pcl);
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+#footer .footer-bg .footer .footer-form h3 {
+    color: var(--dark-01, #181818);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#footer .footer-bg .footer .footer-form form input {
+    display: block;
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+#footer .footer-bg .footer .footer-form form textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+#footer .footer-bg .footer .footer-form form .sub {
+    background-color: var(--pcl);
+    /* width: 150px; */
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-bg .footer .footer-form form .sub {
+    color: var(--white-color, #FFF);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#footer .footer-bg .footer .footer-form form button {
+    border: none;
+    padding: 0px 20px;
+    background-color: var(--pcl);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* =========================== Footer section css ends =============================== */
 
 
 
@@ -391,16 +479,6 @@ i {
     .container {
         width: 100%;
     }
-
-    /* resume responsive css starts */
-    #resume .resume-bg .resume .resume-info {
-        grid-template-columns: 1fr;
-    }
-
-    #resume .resume-bg .resume .resume-info .resume-content{
-        margin-left: 20px;
-    }
-    /* resume responsive css ends */
 
     /* navbar responsive css starts */
     header nav {
@@ -430,7 +508,6 @@ i {
     }
 
     .bgimg img {
-        /* display: none; */
         width: 100%;
     }
 
@@ -479,7 +556,35 @@ i {
         justify-content: center;
         gap: 30px;
     }
+
+    /* resume responsive css starts */
+    #resume .resume-bg .resume .resume-info {
+        grid-template-columns: 1fr;
+    }
+
+    #resume .resume-bg .resume .resume-info .resume-content {
+        margin-left: 20px;
+    }
+
+    /* resume responsive css ends */
+
+    /* footer responsive css starts */
+    #footer .footer-bg .footer {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+        /* margin-left: 20px; */
+    }
+
+    #footer .footer-bg .footer .footer-content,
+    .footer-form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* footer responsive css ends */
 }
+
+
 
 /* Responsive for Mobile devices smaller ends */
 
@@ -490,16 +595,6 @@ i {
     .container {
         width: 100%;
     }
-
-    /* resume responsive css starts */
-    #resume .resume-bg .resume .resume-info {
-        grid-template-columns: 1fr;
-    }
-
-    #resume .resume-bg .resume .resume-info .resume-content{
-        margin-left: 20px;
-    }
-    /* resume responsive css ends */
 
     /* navbar responsive css starts */
     header nav {
@@ -529,7 +624,6 @@ i {
     }
 
     .bgimg img {
-        /* display: none; */
         width: 100%;
     }
 
@@ -576,6 +670,32 @@ i {
     }
 
     /* skill section responsive ends */
+
+    /* resume responsive css starts */
+    #resume .resume-bg .resume .resume-info {
+        grid-template-columns: 1fr;
+    }
+
+    #resume .resume-bg .resume .resume-info .resume-content {
+        margin-left: 20px;
+    }
+
+    /* resume responsive css ends */
+
+    /* footer responsive css starts */
+    #footer .footer-bg .footer {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+        /* margin-left: 20px; */
+    }
+
+    #footer .footer-bg .footer .footer-content,
+    .footer-form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* footer responsive css ends */
 }
 
 /* Responsive for Mobile devices medium-smaller ends */
@@ -613,7 +733,6 @@ i {
     }
 
     .bgimg img {
-        /* display: none; */
         width: 100%;
     }
 
@@ -662,6 +781,32 @@ i {
     }
 
     /* skill section responsive ends */
+
+    /* resume responsive css starts */
+    #resume .resume-bg .resume .resume-info {
+        grid-template-columns: 1fr;
+    }
+
+    #resume .resume-bg .resume .resume-info .resume-content {
+        margin-left: 20px;
+    }
+
+    /* resume responsive css ends */
+
+    /* footer responsive css starts */
+    #footer .footer-bg .footer {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+        /* margin-left: 20px; */
+    }
+
+    #footer .footer-bg .footer .footer-content,
+    .footer-form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* footer responsive css ends */
 }
 
 /* Responsive for tablet and more ends */
@@ -758,6 +903,15 @@ i {
     }
 
     /* skill section responsive ends */
+
+        /* footer responsive css starts */
+        #footer .footer-bg .footer .footer-content,
+        .footer-form {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    
+        /* footer responsive css ends */
 }
 
 /* Responsive for bigger device ends */
